@@ -1,5 +1,6 @@
-import { Button } from './components/button';
-import { Input } from './components/input';
 import { Collapse } from './components/collapse';
+import { Steps } from './components/steps';
+import { Button } from './components/button';
+import { Progress } from './components/progress';
 
-export { Button, Input, Collapse };
+export {Collapse ,Steps,Button,Progress};

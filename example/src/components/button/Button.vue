@@ -1,13 +1,13 @@
 <template>
-  <div className="example">
-    {{ title }}
-    <n-button v-bind="$attrs">
-      <slot></slot>
-    </n-button>
-  </div>
+    <a-button type="primary" block>{{ text || '主按钮'}}</a-button>
 </template>
-
 <script lang="ts" setup>
-import { NButton } from 'naive-ui';
-defineProps<{ title?: string }>();
+import { Button } from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
+import { defineComponent, ref } from 'vue';
+const AButton =  Button;
+
+const activeKey = ref([]);
+defineProps<{ text: string;}>();
+
 </script>

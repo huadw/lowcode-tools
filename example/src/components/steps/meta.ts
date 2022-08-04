@@ -2,36 +2,45 @@ import type { ComponentMetadata } from '@alilc/lowcode-types';
 
 const InputMeta: ComponentMetadata = {
   group: '原子组件',
-  category: '面板组件',
-  componentName: 'Collapse',
-  title: 'Collapse',
+  category: '基础组件',
+  componentName: 'Steps',
+  title: 'Steps',
   docUrl: '',
   screenshot: '',
   devMode: 'proCode',
   npm: {
     package: '@knxcloud/example-component',
     version: '1.0.0',
-    exportName: 'Collapse',
+    exportName: 'Steps',
     destructuring: true,
   },
   configure: {
     props: [
       {
-        name: 'text',
-        title: 'text',
+        name: 'desc0',
+        title: 'desc0',
         setter: {
           componentName: 'StringSetter',
           isRequired: true,
-          initialValue: '111',
+          initialValue: 'This is a description.',
         },
       },
       {
-        name: 'test',
-        title: 'test',
+        name: 'desc1',
+        title: 'desc1',
         setter: {
           componentName: 'StringSetter',
           isRequired: true,
-          initialValue: '222',
+          initialValue: 'This is a description.',
+        },
+      },
+      {
+        name: 'desc2',
+        title: 'desc2',
+        setter: {
+          componentName: 'StringSetter',
+          isRequired: true,
+          initialValue: 'This is a description.',
         },
       },
     ],
@@ -42,10 +51,10 @@ const InputMeta: ComponentMetadata = {
   },
   snippets: [
     {
-      title: '折叠面板',
-      screenshot: 'http://192.168.10.211/icon/collapse.svg',
+      title: 'Steps',
+      screenshot: 'http://192.168.10.211/icon/step.svg',
       schema: {
-        componentName: 'Collapse',
+        componentName: 'Steps',
         props: {},
       },
     },

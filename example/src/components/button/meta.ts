@@ -1,6 +1,6 @@
 import type { ComponentMetadata } from '@alilc/lowcode-types';
 
-const ButtonMeta: ComponentMetadata = {
+const InputMeta: ComponentMetadata = {
   group: '原子组件',
   category: '基础组件',
   componentName: 'Button',
@@ -17,14 +17,8 @@ const ButtonMeta: ComponentMetadata = {
   configure: {
     props: [
       {
-        title: {
-          label: {
-            type: 'i18n',
-            'en-US': 'title',
-            'zh-CN': 'title',
-          },
-        },
-        name: 'title',
+        name: 'text',
+        title: 'text',
         setter: {
           componentName: 'StringSetter',
           isRequired: true,
@@ -39,8 +33,8 @@ const ButtonMeta: ComponentMetadata = {
   },
   snippets: [
     {
-      title: 'Button',
-      screenshot: '',
+      title: 'button',
+      screenshot: 'http://192.168.10.211/icon/button.svg',
       schema: {
         componentName: 'Button',
         props: {},
@@ -49,4 +43,4 @@ const ButtonMeta: ComponentMetadata = {
   ],
 };
 
-export default ButtonMeta;
+export default InputMeta;

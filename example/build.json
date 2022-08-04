@@ -2,8 +2,7 @@
   "publicPath": "/",
   "library": "KnxLcUi",
   "externals": {
-    "vue": "var window.Vue",
-    "naive-ui": "var window.naive"
+    "vue": "var window.Vue"
   },
   "plugins": ["@knxcloud/build-plugin-lowcode"]
 }
